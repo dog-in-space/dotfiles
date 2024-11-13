@@ -1,7 +1,7 @@
 
 set -x SHELL (which fish || which zsh || which bash)
 set -x EDITOR (which nvim || which vim || which vi)
-set -x VISUAL "code --wait"
+set -x VISUAL code --wait
 
 if status is-interactive
 
@@ -10,12 +10,12 @@ if status is-interactive
 	set -x AICHAT_CONFIG_FILE "$HOME/.config/aichat/config.yaml"
 	
 	#conifg shortcuts 
-	alias fishrc="nvim $HOME/.config/fish/config.fish"
-	alias fishconfd="cd $HOME/.config/fish/conf.d/"
+	alias fishrc="chezmoi edit $HOME/.config/fish/config.fish"
+	alias fishconfd="chezmoi edit $HOME/.config/fish/conf.d/"
 	alias sourcerc="source $HOME/.config/fish/config.fish"
-	alias atuinrc="nvim $HOME/.config/atuin/config.toml"
-	alias aichatrc="nvim $AICHAT_CONFIG_FILE"
-	alias kittyrc="nvim .config/kitty/kitty.conf"
+	alias atuinrc="chezmoi edit $HOME/.config/atuin/config.toml"
+	alias aichatrc="chezmoi edit $AICHAT_CONFIG_FILE"
+	alias kittyrc="chezmoi edit $HOME/.config/kitty/kitty.conf"
 
 	#terminal shortcuts
 	alias ask="aichat -e "
