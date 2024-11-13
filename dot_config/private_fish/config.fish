@@ -1,5 +1,7 @@
-set -x HOMEBREW_CASK_OPTS "--no-quarantine"
 
+set -x SHELL $(which fish)
+set -x EDITOR $(which nvim)
+set -x VISUAL code
 
 if status is-interactive
 
@@ -13,6 +15,7 @@ if status is-interactive
 	alias sourcerc="source $HOME/.config/fish/config.fish"
 	alias atuinrc="nvim $HOME/.config/atuin/config.toml"
 	alias aichatrc="nvim $AICHAT_CONFIG_FILE"
+	alias kittyrc="nvim .config/kitty/kitty.conf"
 
 	#terminal shortcuts
 	alias ask="aichat -e "
