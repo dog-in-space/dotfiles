@@ -1,0 +1,22 @@
+# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+
+
+stream: true                     # Controls whether to use the stream-style API.
+save: true                       # Indicates whether to persist the message
+keybindings: vi                  # Choose keybinding style (emacs, vi)
+editor: nvim                     # Specifies the command used to edit input buffer or session.yaml. env: EDITOR
+wrap: no                         # Controls text wrapping (no, auto, <max-width>)
+wrap_code: true                  # Enables or disables wrapping of code blocks
+
+
+model: ollama
+
+clients:
+- type: openai-compatible
+  name: ollama
+  api_base: "https://api.laika.dad/v1"
+  api_key: null
+  models:
+    - name: "qwen2.5-coder:14b"
+      max_input_tokens: 128000
+
