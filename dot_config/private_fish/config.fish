@@ -1,7 +1,7 @@
 
-set -x SHELL $(which fish)
-set -x EDITOR $(which nvim)
-set -x VISUAL code
+set -x SHELL (which fish || which zsh || which bash)
+set -x EDITOR (which nvim || which vim || which vi)
+set -x VISUAL "code --wait"
 
 if status is-interactive
 
@@ -36,11 +36,13 @@ if status is-interactive
 	alias cd="z"
 
 	# ls to eza
+	if which eza > /dev/null
 	alias lsog="$LSOG"
 	alias ls="eza"
 	alias ll="eza -l"
 	alias la="ls -a"
 	alias lla="ls -la"
+	end
 
 	# easy active ports
 	alias tunl="netstat -tunl"
