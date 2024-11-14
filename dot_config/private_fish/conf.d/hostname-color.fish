@@ -18,9 +18,9 @@ else if test "$HOSTNAME" = "Q58-GPC"
 	set fish_color_host_remote 2E0C5E
 	set fish_color_user white
 else 
-
-set fish_color_host
-
+	set fish_color_host green
+	set fish_color_host_remote green
+	set fish_color_user white
 end
 
 end
