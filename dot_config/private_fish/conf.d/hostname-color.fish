@@ -5,18 +5,14 @@ end
 
 if status is-interactive
 
-<<<<<<< Updated upstream
 if test "$HOSTNAME" = "orange"
 	set fish_color_host FA9D0E
 	set fish_color_host_remote FA9D0E
-=======
 if test "$HOSTNAME" = "M1-macOS"
 	set fish_color_host yellow
->>>>>>> Stashed changes
 	set fish_color_user white
 else if test "$HOSTNAME" = "pink"
 	set fish_color_host FA7DF0
-<<<<<<< Updated upstream
 	set fish_color_host_remote FA7DF0
 	set fish_color_user white	
 else if test "$HOSTNAME" = "purple"
@@ -26,11 +22,9 @@ else if test "$HOSTNAME" = "purple"
 else if test "$HOSTNAME" = "blue"
 	set fish_color_hosts blue
 	set fish_color_host_remote blue
-=======
 	set fish_color_user white
 else if test "$HOSTNAME" = "Q58-GPC"
 	set fish_color_host magenta
->>>>>>> Stashed changes
 	set fish_color_user white
 else 
 	set fish_color_host green
