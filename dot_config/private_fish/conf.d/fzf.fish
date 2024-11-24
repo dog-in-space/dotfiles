@@ -14,6 +14,9 @@ set -x FZF_DEFAULT_OPTS "
   --multi
 "
 
+set -x FZF_CTRL_R_OPTS "--preview-window=hidden"
+bind \e\[A fzf-history-widget
+
 # if fd is found use it else use find
 if type -q fd
     set -x FZF_DEFAULT_COMMAND "fd --type f --hidden --follow --exclude .git"
