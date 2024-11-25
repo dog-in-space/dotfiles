@@ -17,7 +17,6 @@ set -x FZF_DEFAULT_OPTS "
 "
 
 set -x FZF_CTRL_R_OPTS "--preview-window=hidden"
-bind \e\[A fzf-history-widget
 
 # if fd is found use it else use find
 if type -q fd
