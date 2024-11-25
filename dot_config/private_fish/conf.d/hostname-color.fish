@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 
 if set -q hostname
 	set -x HOSTNAME "$hostname"

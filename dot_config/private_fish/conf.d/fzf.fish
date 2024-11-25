@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 if status is-interactive
 
 set -x FZF_DEFAULT_OPTS "

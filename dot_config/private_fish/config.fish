@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 
 set -x SHELL (which fish || which zsh || which bash)
 set -x EDITOR (which nvim || which vim || which vi)
