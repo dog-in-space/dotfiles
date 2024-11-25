@@ -7,3 +7,8 @@ else if test -e /home/linuxbrew/.linuxbrew/bin/brew
 else
         echo "Homebrew not found in expected locations"
 end
+
+#if podman is installed via brew then use the brew version
+if test -e /home/linuxbrew/.linuxbrew/bin/podman
+        alias podman=/home/linuxbrew/.linuxbrew/bin/podman
+end
