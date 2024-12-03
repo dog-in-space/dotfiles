@@ -2,6 +2,6 @@
 
 alias pink="ssh pink"
 
-alias q58="ssh q58"
+alias purple="ssh purple"
 
 alias blue="ssh blue"
