@@ -40,6 +40,12 @@ if status is-interactive
 	# cd to zoxide
 	alias cd="z"
 
+	# rm to trash
+	alias rm="trash"
+	alias delete="$(which rm) -rf"
+	alias bin="trash-list"
+	alias recycle="trash-empty"	
+
 	# ls to eza
 	if which eza > /dev/null
 	alias lsog="$LSOG"
