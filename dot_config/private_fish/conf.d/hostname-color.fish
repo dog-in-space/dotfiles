@@ -12,7 +12,7 @@ if test "$HOSTNAME" = "silver"
 else if test "$HOSTNAME" = "pink"
 	set fish_color_host FA7DF0
 	set fish_color_host_remote FA7DF0
-else if test "$HOSTNAME" = "purple"
+else if test "$HOSTNAME" = "purple" -o "$HOSTNAME" = "lavender" -o "$HOSTNAME" = "indigo"
 	set fish_color_host 2E0C5E
 	set fish_color_host_remote 2E0C5E
 else if test "$HOSTNAME" = "blue"
