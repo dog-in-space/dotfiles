@@ -4,7 +4,7 @@ set -x SHELL (which fish || which zsh || which bash)
 set -x EDITOR (which nvim || which vim || which vi)
 
 # set VISUAL to code if available (chezmoi used this)
-if which code
+if type -q code
 	set -x VISUAL code --wait
 end
 
