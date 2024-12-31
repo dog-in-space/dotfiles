@@ -8,6 +8,10 @@ if type -q code
 	set -x VISUAL code --wait
 end
 
+if type -q rpm-ostree
+    alias os-up="sudo rpm-ostree upgrade"
+end
+
 if status is-interactive
 
 	set -x EZA_ICONS_AUTO always
