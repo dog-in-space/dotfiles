@@ -15,8 +15,7 @@ if status is-interactive
 	set -x AICHAT_CONFIG_FILE "$HOME/.config/aichat/config.yaml"
 	
 	#conifg shortcuts 
-	alias fishrc="chezmoi edit $HOME/.config/fish/config.fish"
-	alias fishconfd="chezmoi edit $HOME/.config/fish/conf.d/"
+	alias fishrc="chezmoi edit $HOME/.config/fish/"
 	alias sourcerc="source $HOME/.config/fish/config.fish"
 	alias atuinrc="chezmoi edit $HOME/.config/atuin/config.toml"
 	alias aichatrc="chezmoi edit $AICHAT_CONFIG_FILE"
