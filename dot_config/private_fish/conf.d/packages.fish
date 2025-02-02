@@ -5,5 +5,3 @@ set -x BREW_PACKAGES_CLI aichat bat chezmoi dockutil duf dust eza fastfetch fd f
 if test (uname) = "Darwin"
     set -x -a BREW_PACKAGES_CLI dockutil mas syncthing
 end
-
-alias brew-up="brew install $BREW_PACKAGES_CLI"
