@@ -11,7 +11,6 @@ end
 if status is-interactive
 
 	set -x EZA_ICONS_AUTO always
-	set -x LSOG $(which ls)
 	set -x AICHAT_CONFIG_FILE "$HOME/.config/aichat/config.yaml"
 
 	zoxide init fish | source

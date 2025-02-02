@@ -36,7 +36,7 @@ if status is-interactive
 
     # ls to eza
     if which eza > /dev/null
-        alias lsog="$LSOG"
+        alias lsog="$(which ls)"
         alias ls="eza"
         alias ll="eza -l"
         alias la="eza -a"
