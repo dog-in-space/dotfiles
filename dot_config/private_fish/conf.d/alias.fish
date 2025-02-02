@@ -11,23 +11,23 @@ if status is-interactive
     alias ddg="open https://start.duckduckgo.com/"
 
     # vi to nvim
-    if which nvim > /dev/null
+    if type -q nvim
         alias vi="nvim"
         alias vim="nvim"
     end
     
     # cat to bat
-    if which bat > /dev/null
+    if type -q nvim
         alias cat="bat -pp"
     end
 
     # cd to zoxide
-    if which zoxide > /dev/null
+    if type -q zoxide
         alias cd="z"
     end
 
     # rm to trash
-    if which trash > /dev/null
+    if type -q trash
         alias rm="trash"
         alias delete="$(which rm) -rf"
         alias bin="trash-list"
@@ -35,7 +35,7 @@ if status is-interactive
     end
 
     # ls to eza
-    if which eza > /dev/null
+    if type -q eza
         alias lsog="$(which ls)"
         alias ls="eza"
         alias ll="eza -l"
@@ -43,7 +43,7 @@ if status is-interactive
         alias lla="eza -la"
     end
 
-    if which systemctl > /dev/null
+    if type -q systemctl
         alias sysu="systemctl --user"
     end
     
