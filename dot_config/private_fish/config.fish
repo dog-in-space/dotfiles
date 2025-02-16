@@ -4,8 +4,8 @@ set -x SHELL (which fish || which zsh || which bash)
 set -x EDITOR (which nvim || which vim || which vi)
 
 # set VISUAL to code if available (chezmoi used this)
-if type -q zed > /dev/null
-	set -x VISUAL zed --wait
+if type -q code > /dev/null
+	set -x VISUAL code --wait
 end
 
 if status is-interactive
