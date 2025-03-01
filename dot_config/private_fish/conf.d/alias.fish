@@ -46,7 +46,11 @@ if status is-interactive
     if type -q systemctl
         alias sysu="systemctl --user"
     end
-    
+
+    if type -q pueue
+        alias q="pueue"
+    end
+
     # easy active ports
     alias tunl="netstat -tunl"
 
