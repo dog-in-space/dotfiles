@@ -10,6 +10,12 @@ end
 
 if status is-interactive
 
+	if type -q fastfetch
+		function fish_greeting
+			fastfetch
+		end	
+	end
+
 	set -x EZA_ICONS_AUTO always
 	set -x AICHAT_CONFIG_FILE "$HOME/.config/aichat/config.yaml"
 
